@@ -1,0 +1,167 @@
+/*font-family: 'Acme', sans-serif;*/
+/*font-family: 'Lobster', sans-serif;*/
+/*font-family: 'Be Vietnam Pro', sans-serif;*/
+
+/*Basic*/
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Be Vietnam Pro', sans-serif;
+	background-image: url('../img/bg-4.jpg');
+	background-size: cover;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.bg-grey {
+	background-color: #555555;
+}
+
+.bg-carrot {
+	background-color: #ed9121;
+}
+
+.text-black {
+	color: black;
+}
+
+.text-carrot {
+	color: #ed9121;
+}
+
+.container-fluid {
+	margin-top: -5px;
+	margin-bottom: -5px;
+
+}
+
+img:hover {
+	transition: 0.4s;
+	transform: scale(1.1);
+}
+
+/*Main*/
+.name {
+	font-family: 'Lobster', sans-serif;
+	transform: rotate(-4deg);
+	color: #ed9121;
+}
+.name::before {
+	content: '- ';
+}
+
+.name::after {
+	content: ' -';
+}
+
+nav{
+    transition: 0.5s;
+    height: 100px;
+    line-height: 20px;
+    background: transparent;
+}
+
+.navbar-nav .nav-link {
+	color: white;
+	border-bottom: 2px solid transparent;
+}
+
+.navbar-nav .nav-link:hover {
+	transition: 0.2s;
+	font-weight: bold;
+    color: #ed9121;
+    border-bottom: 2px solid #ed9121;
+}
+
+.scrolling-active {
+    /*background-color: black;*/
+    background: #ed9121;
+    height: 70px;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.scrolling-active .navbar-nav .nav-link {
+    color: white;
+}
+
+.scrolling-active .navbar-nav .nav-link:hover {
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+    border-bottom: 2px solid black;
+}
+
+#home i:hover {
+	color: #ed9121;
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.circular-portrait {
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.circular-portrait img {
+	margin-top: -20px;
+}
+
+.title::after {
+	content: '';
+	border-bottom: 3px solid white;
+	width: 70px;
+	display: block; 
+	margin: 10px auto;
+}
+
+a.btn.bg-carrot:hover {
+	background-color: #555555;
+}
+
+.gobtn{
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    background: #ed9121;
+    text-align: center;
+    border-radius: 100%;
+    display: none;
+    transition: 0.5s;
+    transition-property: transform, background;
+}
+
+.gobtn:hover {
+	transform: scale(1.3);
+	background: #343a40;
+}
+
+.gobtn i{
+	color: white;
+    margin: 15px auto;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
